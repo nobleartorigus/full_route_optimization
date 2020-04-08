@@ -26,27 +26,23 @@ app.get('/', (req, res) => {
 
 //PYTHON
     
-    app.get('/python', (req, res) => { 
-    
-        const { spawn } = require('child_process'); 
+app.get('/python', (req, res) => { 
 
-        //Collect data from script
-        const pyProg = spawn('python',['./src/hello.py']); 
-    
-        pyProg.stdout.on('data', function(data) { 
-    
-         console.log(data.toString()); 
-         res.write(data); 
+    const { spawn } = require('child_process'); 
 
-         //res.status(200).send(data)
-         res.end(); 
-    
-        })
-    }) 
+    //Collect data from script
+    const pyProg = spawn('python',['./src/hello.py']); 
 
-    
+    pyProg.stdout.on('data', function(data) { 
 
-//         // collect data from script
+        console.log(data.toString()); 
+        res.write(data); 
+
+        //res.status(200).send(data)
+        res.end(); 
+
+    })
+    //         // collect data from script
 
 //         console.log('si hay proceso')
 //         console.log(`Node Js recibio datos: ${data}`)
@@ -60,7 +56,9 @@ app.get('/', (req, res) => {
 //         // })
 //     })
 
+}) 
 
+    
 //UPLOAD FILES
 
 app.get("/uploads", (req, res) => {
