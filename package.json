@@ -18,9 +18,21 @@
   },
   "homepage": "https://github.com/nobleartorigus/full_route_optimization#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.7-alpha.2",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.7.6",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
     "mongoose": "^5.9.5",
-    "request": "^2.88.2"
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2",
+    "validator": "^13.0.0"
   }
 }
