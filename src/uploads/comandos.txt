@@ -1,0 +1,5 @@
+sudo su root
+cd eventparse/
+./IVEventParseWatchdog.sh &
+./runeventparseservice.sh >> /opt/eventparse/consoleLog.txt > 2>&1 &
+exit
