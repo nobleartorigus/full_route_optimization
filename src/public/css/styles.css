@@ -1,7 +1,143 @@
 body {
-    background: #1488CC
+    height: 1080px;
+    background: transparent linear-gradient(90deg, #7B1429 0%, #7B0A14 4%, #9C1931 8%, #9D0B19 12%, #AB0719 13%, #C5021B 16%, #CF001C 17%, #B8092F 18%, #7D2261 21%, #682B74 21%, #662B75 24%, #4E2F88 26%, #113A89 29%, #003176 32%, #182669 42%, #003283 49%, #005696 56%, #166F9E 59%, #3794AB 63%, #44A2B0 66%, #3E9FAE 67%, #2E97AB 70%, #148AA5 73%, #0081A1 74%, #0F9664 84%, #18A146 89%, #008B72 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
-.logo {
-    width: 30%;
+/* Navigation Bar ---------------------------------------------*/
+
+.topbar {
+    margin-top: 20px;
+    height: 7%;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: black;
 }
+
+.topbar img{
+    margin-left: 8%;
+    width: 13%;
+}
+
+.navbar {
+    width: 100%;
+    margin-top: 0;
+    overflow: hidden;
+    background: white;
+    height: 5%;
+}
+
+.menu{
+    margin-left: 8%;
+    width: 40%;
+}
+
+.navbar a {
+    float: left;
+    /* display: block; */
+    color: black;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 5%;
+  }
+
+.navbar a:hover{
+    color: #005691;
+    border-bottom: 2px solid #005691;
+}
+
+
+#logout{
+    width: 50%;
+}
+
+.currentbar{
+    width: 100%;
+    margin-top: 0;
+    border-top: 1px groove black;
+    overflow: hidden;
+    background: white;
+    height: 4%;
+}
+
+
+/*  ------------------------------------------------------------------------     */
+
+/* Container ----------------------------------------------------------- */
+.container-bosch{
+    /* width: 100vw; */
+    border-top: 1px groove black;
+    margin-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+/* Login ------------------------------------------------------------- */
+
+.login-card {
+    position: absolute;
+    top: 26%;
+    left: 36.7%;
+    padding: 50px;
+    width: 26vw;
+    height: 26vw;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.logo{
+    /* background: transparent url('/src/public/img/bosch.jpg') 0% 0% no-repeat padding-box; */
+    width: 75%;
+    margin-bottom: 7.26%;
+}
+
+.form-input-bosch{
+    width: 100%;
+    margin-bottom: 7.26%;
+    padding: 3%;
+    /* height: 11vw; */
+    opacity: 1;
+}
+
+.btn-bosch{
+    width: 100%;
+    margin-bottom: 9.62%;
+    /* height: 11vw; */
+    background: #103177 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.btn-text{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    /* font: Regular 24px/31px Bosch Sans; */
+    font-size: large;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.center-horizontal{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.center-vertical{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  }
+
+  .center{
+      position: absolute;
+      top: 26%;
+      left: 36.7%;
+  }

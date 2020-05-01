@@ -2,9 +2,10 @@ const { Router } = require('express')
 const router = Router()
 
 const { renderUploadForm, uploadFile } = require('../controllers/upload.controller')
+const { isAdmin } = require('../helpers/auth')
 
-router.get('/upload', renderUploadForm)
+router.get('/upload', isAdmin, renderUploadForm)
 
-router.post('/upload', uploadFile)
+router.post('/upload', isAdmin, uploadFile)
 
 module.exports = router

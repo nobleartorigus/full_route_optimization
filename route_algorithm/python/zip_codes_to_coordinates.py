@@ -1,5 +1,5 @@
-from sys import path
-path.insert(0,'../python')
+import sys
+sys.path.append('route_algorithm/python')
 from map_utils import *
 import pandas as pd
 import numpy as np
@@ -21,7 +21,7 @@ def check_zipcode_format(df,cp_column = 'CP'):
 
 
 def merge_coordinates(df,cp_column = 'CP',
-                     zip_codes_path = '../data/zip_codes/codes_for_db1.csv'):
+                     zip_codes_path = 'route_algorithm/data/zip_codes/codes_for_db1.csv'):
 
     zip_codes = pd.read_csv(zip_codes_path, index_col=0, dtype=str)
     zip_codes['CP'] = zip_codes['CP'].map(lambda x:  '0' + str(x) if (len(str(x)) == 4) else str(x) )

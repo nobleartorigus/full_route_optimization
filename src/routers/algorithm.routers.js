@@ -1,10 +1,15 @@
 const { Router } = require('express')
 const router = Router()
 
-const { createData, renderData } = require('../controllers/algorithm.controller')
+const { createData, renderData, renderAssociates, deleteAssociate } = require('../controllers/algorithm.controller')
+const { isAuthenticated } = require('../helpers/auth')
 
-router.get('/routes', createData)
+router.get('/routes', isAuthenticated, createData)
 
-router.get('/map', renderData)
+router.get('/maps/:id', isAuthenticated, renderData)
+
+router.get('/associates', isAuthenticated, renderAssociates)
+
+router.delete('/associates/delete/:id', isAuthenticated, deleteAssociate)
 
 module.exports = router
