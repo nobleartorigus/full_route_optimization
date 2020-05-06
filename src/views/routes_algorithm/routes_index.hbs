@@ -1,17 +1,14 @@
-<h1> Routes </h1>
+<div class="rutas-index">
 
-<div class="card md-4">
-    <div class="card-header">
-        <div class="card-body">
-            {{#each maps}}
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="/maps/{{_id}}" target="_blank"> {{city}} </a>                 
-                    </div>
-                </div></br>
-            </div>
-            {{/each}}
-        </div>
+    {{#each maps}}
+    <div class="ruta" id="ruta{{@index}}">
+        {{!-- <a href="/maps/{{_id}}" target="_blank"> {{city}} </a> --}}
+        <img src="img/clock.svg" alt="clock" />
+        <a href="/turnos/{{_id}}"> Ruta No. {{@index}} </a>
+        {{!-- <a href="/maps/{{_id}}" target="_blank"> Ruta No. {{@index}} </a> --}}
+
+
     </div>
+
+    {{/each}}
 </div>

@@ -1,21 +1,46 @@
-<div class="topbar">
-    <img src='/img/bosch.png'>
-</div>
-<nav class="navbar">
-    <div class="menu">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-
-
-        {{#if user}}
-        <a href="/routes">Rutas</a>
-        <a href="#">Paradas</a>
-
-        {{/if}}
+<div class="navigation">
+    <div class="topbar">
+        <img src='/img/bosch.png'>
     </div>
+    <nav class="navbar">
+        <div class="menu">
+            <a id="home" href="/">Home
+            </a>
+            <a id="about" href="/about">About</a>
 
-    <a href="/users/logout">
-        <img alt="bosch logo" src="/img/my-brand-frame.svg" id="logout" >
-    </a>
-</nav>
-<div class="currentbar"></div>
+
+            {{#if user}}
+            <a href="/routes">Rutas</a>
+            <a href="#">Paradas</a>
+
+            {{/if}}
+        </div>
+
+        <a href="/users/logout">
+            <img alt="bosch logo" src="/img/my-brand-frame.svg" id="logout">
+        </a>
+    </nav>
+    <div class="currentbar"></div>
+
+    <script>
+        let url = window.location.pathname
+        if (url === '/'){
+            document.querySelector('.currentbar').textContent = 'Home'
+        }
+
+        if (url === '/about'){
+            document.querySelector('.currentbar').textContent = 'About'
+        }
+
+        if (url === '/users/signup'){
+            document.querySelector('.currentbar').textContent = 'Perfil'
+        }
+
+        if (url === '/routes'){
+            document.querySelector('.currentbar').textContent = 'Rutas'
+        }
+
+    </script>
+
+
+</div>

@@ -1,8 +1,55 @@
-body {
-    height: 1080px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 600px;
     background: transparent linear-gradient(90deg, #7B1429 0%, #7B0A14 4%, #9C1931 8%, #9D0B19 12%, #AB0719 13%, #C5021B 16%, #CF001C 17%, #B8092F 18%, #7D2261 21%, #682B74 21%, #662B75 24%, #4E2F88 26%, #113A89 29%, #003176 32%, #182669 42%, #003283 49%, #005696 56%, #166F9E 59%, #3794AB 63%, #44A2B0 66%, #3E9FAE 67%, #2E97AB 70%, #148AA5 73%, #0081A1 74%, #0F9664 84%, #18A146 89%, #008B72 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    background-size: cover;
 }
+
+/* .bckgrnd{
+   
+    background: transparent linear-gradient(90deg, #7B1429 0%, #7B0A14 4%, #9C1931 8%, #9D0B19 12%, #AB0719 13%, #C5021B 16%, #CF001C 17%, #B8092F 18%, #7D2261 21%, #682B74 21%, #662B75 24%, #4E2F88 26%, #113A89 29%, #003176 32%, #182669 42%, #003283 49%, #005696 56%, #166F9E 59%, #3794AB 63%, #44A2B0 66%, #3E9FAE 67%, #2E97AB 70%, #148AA5 73%, #0081A1 74%, #0F9664 84%, #18A146 89%, #008B72 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+    min-width: 100%;
+    min-height: 100%;
+} */
+
+/* Container ----------------------------------------------------------- */
+.container-bosch{
+    min-height: 500px;
+    margin-bottom: 5%;
+    border-top: 1px groove black;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* ----------- Footer -------------------------------------------------*/
+footer {
+    width: 55%;
+    margin-left: 7.29%;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+footer li{
+    font-size: small;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+footer strong {
+    text-align: justify;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 
 /* Navigation Bar ---------------------------------------------*/
 
@@ -10,18 +57,17 @@ body {
     margin-top: 20px;
     height: 7%;
     background-color: white;
-    overflow: hidden;
     border-bottom: black;
 }
 
 .topbar img{
     margin-left: 8%;
     width: 13%;
+    overflow: hidden;
 }
 
 .navbar {
-    width: 100%;
-    margin-top: 0;
+    margin-top: 0%;
     overflow: hidden;
     background: white;
     height: 5%;
@@ -44,6 +90,7 @@ body {
   }
 
 .navbar a:hover{
+    padding-bottom: 1%;
     color: #005691;
     border-bottom: 2px solid #005691;
 }
@@ -54,90 +101,186 @@ body {
 }
 
 .currentbar{
-    width: 100%;
-    margin-top: 0;
     border-top: 1px groove black;
+    padding: 0.7%;
+    padding-left: 9.5%;
     overflow: hidden;
     background: white;
-    height: 4%;
+    height: 10%;
 }
 
-
-/*  ------------------------------------------------------------------------     */
-
-/* Container ----------------------------------------------------------- */
-.container-bosch{
-    /* width: 100vw; */
-    border-top: 1px groove black;
-    margin-bottom: 20px;
-    background-color: white;
-    overflow: hidden;
+/* -------------- Signup ----------------------------- */
+.signup{
+    width: 25%;
+    margin-top: 1%;
+    margin-left: 9.6%;
+    
 }
 
+.signup-header{
+    font-size: large;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
 
-/* Login ------------------------------------------------------------- */
+.signup-header img{
+    width: 8%;
+    margin-right: 3%;
+}
 
-.login-card {
-    position: absolute;
-    top: 26%;
-    left: 36.7%;
-    padding: 50px;
-    width: 26vw;
-    height: 26vw;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 6px;
+.formulario label{
+    font-size: small;
+    padding-bottom: 0%;
+}
+
+.formulario input[type=text], .formulario input[type=email], .formulario input[type=password]{
+    padding-top: 0%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.btn-signup{
+    margin-top: 5%;  
+    width: 30%;
+    background: #233880 0% 0% no-repeat padding-box;
+    border: 1px solid #0000000D;
     opacity: 1;
+
+    font-size: small;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
 }
 
-.logo{
-    /* background: transparent url('/src/public/img/bosch.jpg') 0% 0% no-repeat padding-box; */
-    width: 75%;
-    margin-bottom: 7.26%;
+/* -------------- login ------------------------------ */
+
+.login-card img{
+    width: 57%;
+    display: block;
+    padding-top: 6.28%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
 }
 
 .form-input-bosch{
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
     margin-bottom: 7.26%;
-    padding: 3%;
     /* height: 11vw; */
     opacity: 1;
 }
 
-.btn-bosch{
-    width: 100%;
-    margin-bottom: 9.62%;
-    /* height: 11vw; */
-    background: #103177 0% 0% no-repeat padding-box;
+.btn-login{  
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    background: #233880 0% 0% no-repeat padding-box;
+    border: 1px solid #0000000D;
     opacity: 1;
+
+    font-size: small;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
 }
 
-.btn-text{
+
+/* -------------------- Index ------------------------------------------ */
+
+.portada{
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 3%;
-    /* font: Regular 24px/31px Bosch Sans; */
-    font-size: large;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+    min-height: 400px;
+    background: url('/img/mapaprueba.jpg');
+    margin-top: 0;
 }
 
-.center-horizontal{
-    display:block;
+.portada h1{
+    width: 70%;
+    padding-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.portada h4{
+    padding-top: 0%;;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-  }
+    text-align: center;
+}
 
-.center-vertical{
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-  }
+/* ---------------- Contacto ------------------------------------- */
+.contacto {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-  .center{
-      position: absolute;
-      top: 26%;
-      left: 36.7%;
-  }
+.contacto-strong li{
+    font-size: small;
+    display: inline-block;
+    margin-right: 25%;
+}
+
+.social-media{
+    width: 25%;
+    float: left;
+}
+
+.contact-support{
+    float: left;
+    margin-left: 9.5%;
+    font-size: small;
+}
+
+.contact-support ul{
+    list-style: none;
+}
+
+.you-are-on{
+    float: left;
+    margin-left: 26.5%;
+    font-size: small;
+}
+
+.you-are-on ul{
+    list-style: none;
+}
+
+/* -------------------------- Rutas Index --------------------------------------------*/
+
+.rutas-index{
+    width: 60%;
+    margin-left: 10%;
+}
+
+.ruta{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    border-bottom: 1px ridge #BFC0C2;
+}
+
+.ruta a{
+    padding-left: 6%;
+    color:black;
+}
+
+/*---------------------- Mapa - Turno ------------------------------------------------ */
+.mapa{
+    margin-top: 10%;
+    width: 50%;
+    align-self: right;
+    padding-right: 2%;
+
+}

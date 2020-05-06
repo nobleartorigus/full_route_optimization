@@ -1,38 +1,35 @@
-<div class="row col-md-4 mx-auto">
-    <div class="card">
-        <div class="card-header">
-            Account Register
-        </div>
-        <div class="card-body">
-            <form action="/users/signup" method="POST">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Name" value={{name}}>
-                </div>
-                <div class="form-group">
-                    {{!-- <input type="text" class="form-control" name= "city" placeholder="City" value={{city}}> --}}
-                    <div class="col-md-8 mx-auto">
-                        <h5>City</h5>
-                    </div>
-                    <select name="city" required="True">
-                        <option value="none" selected disabled hidden>
-                            Select an Option
-                        </option>
-                        <option value="Aguascalientes">Aguascalientes</option>
-                        <option value="Toluca">Toluca</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email" value={{email}}>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Password" />
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="confirm_password"
-                        placeholder="Confirm Password" />
-                </div>
-                <button class="btn btn-primary btn-block">Sign Up</button>
-            </form>
-        </div>
+<div class="signup">
+    <div class="signup-header">
+        <img src="/img/my-brand-frame.svg" alt="user" />
+        <strong>Datos Personales</strong>
+    </div>
+    <div class="formulario">
+        <form action="/users/signup" method="POST">
+            <label for="name">Nombre</label></br>
+            <input type="text" name="name" placeholder="Name" value={{name}}></br></br>
+
+            <label for="email">E-mail</label></br>
+            <input type="email" name="email" placeholder="E-mail" value={{name}}></br></br>
+            {{!-- <input type="text" class="form-control" name= "city" placeholder="City" value={{city}}> --}}
+            {{!-- <div class="o">
+                <h5>City</h5>
+            </div>
+            <select name="city" required="True">
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Toluca">Toluca</option>
+            </select> --}}
+
+            <label for="city">Ciudad</label></br>
+            <input type="text" name="city" placeholder="Aguascalientes" value={{city}} ></br></br>
+        
+                <input type="password"  name="password" placeholder="Contrasena" /></br>
+                <input type="password" name="confirm_password" placeholder="Confirmar Contrasena" /></br></br>
+     
+            {{!-- <button class="">Sign Up</button> --}}
+            <input type="submit" class="btn-signup" value="Sign Up">
+        </form>
     </div>
 </div>

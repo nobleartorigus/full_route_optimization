@@ -1,12 +1,18 @@
 <style>
-.topbar, .navbar, .currentbar{display:none;}
+.topbar, footer, .navbar, .currentbar{display:none;}
+</style>
+
+<style>
+    .container-bosch{min-height: 250px; margin-top: 13%; margin-left:auto; margin-right: auto; width: 26vw;
+    height: 26vw; border-radius: 6px;}
 </style>
     
     <div class="login-card">
-        <img src="/img/bosch.png" class="mx-auto d-block logo" />
+        <img src="/img/bosch.png" alt="bosch-logo" />
         <form action="/users/login" method="POST">
             <input type="email" class="form-input-bosch" name="email" placeholder="Email" />
             <input type="password" class="form-input-bosch" name="password" placeholder="Password" />
-            <button class="btn-bosch btn-text">Login</button>
+            {{!-- <button class="btn-bosch">Login</button> --}}
+            <input type="submit" class="btn-login" value="Log In" />
         </form>
     </div>

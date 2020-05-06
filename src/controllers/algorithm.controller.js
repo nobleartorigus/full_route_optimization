@@ -19,12 +19,22 @@ algorithmController.renderData = async (req, res) => {
     //res.sendFile('routes_algorithm/maps/mapeo_asociados_ags.html')
     console.log(req.params.id)
     const id = req.params.id
-    const map = await Maps.findById(id)
+    const map = await Maps.findById(id).lean()
 
     const url = map.url
     console.log(map.url)
 
     res.sendFile(path.resolve(url))
+    //res.render('routes_algorithm/routes_maps', {url} )
+}
+
+algorithmController.mapForm = async (req, res) => {
+    console.log(req.params)
+    const id = req.params.id
+
+    const mapurl = await Maps.findById(id).lean()
+    console.log(mapurl)
+    res.render('routes_algorithm/routes_maps', {mapurl} )
 }
 
 algorithmController.renderAssociates = async (req, res) => {
