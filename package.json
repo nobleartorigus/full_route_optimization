@@ -28,7 +28,7 @@
     "express-fileupload": "^1.1.7-alpha.2",
     "express-handlebars": "^4.0.3",
     "express-session": "^1.17.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.5",
     "morgan": "^1.10.0",
